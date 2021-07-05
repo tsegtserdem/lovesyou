@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <script type="text/javascript">
-alert("❤️ Нууц үг зөв байна ❤️ 😄 гэхдээ би усан үзэмд дуртай шүү ^^");
+alert("❤️ Нууц үг зөв байна ❤️ 😄 гэхдээ би усан үзэмд дургүй биш шүү ^^");
+    setTimeout(function(){
+    	var modifiedClass = document.getElementById('threeSeconds').className.replace(/\bhidden\b/, '');
+    	document.getElementById('threeSeconds').className = modifiedClass;
+	}, 13000);
 </script>
 <head>
 <style>
@@ -54,6 +58,9 @@ article {
     flex-direction: column;
   }
 }
+.hidden {
+    display:none;
+}
 </style>
     <title>for MaSUN ☀️</title>
 	<link rel="icon" href="fav.jpg" type="image/gif" sizes="16x16">
@@ -79,7 +86,7 @@ article {
 			
 		
     </ul>
-<article>
+<article id="threeSeconds" class="hidden">
     <h1>❤️ Сайн уу Номио ^^</h1>
     <p>нннн миний охин хичээлээ тарж ирээд өрөөндөө сууж байгаа байхдаа. Номиогоо хичээл ихтэй байхад нь удаан ярих ингээд, 
 	зөндөө юм бичих ингээд байдаг байхдаа. Зөндөө завгүй байж надтай ярилцаж, цаг гаргадагт зөндөө их баярлалаа Номио</p>
